@@ -1,7 +1,9 @@
 archlinux_test container setup:
 cd archlinux_test
 sudo docker build -t archlinux_env .
+
 sudo docker container create -i -t --name arch_env_1 archlinux_env:latest
+
 sudo docker container start arch_env_1
 sudo docker container attach arch_env_1
 
